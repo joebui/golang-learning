@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+// import "fmt"
 
 func main() {
 	cards := newDesk()
@@ -8,6 +8,12 @@ func main() {
 	// hand.print()
 	// fmt.Println("----")
 	// remainingCard.print()
-	fmt.Println(cards.toString())
-	cards.saveToFile("test.txt")
+
+	// fmt.Println(cards.toString())
+	// cards.saveToFile("test.txt")
+
+	// newCards := newDeskFromFile("test.txt")
+	// newCards.print()
+	cards.shuffle()
+	cards.print()
 }
